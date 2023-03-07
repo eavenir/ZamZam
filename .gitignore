@@ -1,7 +1,1 @@
-
-*.zip
-*.jpg
-*.zip
-*.sql
-*.png
-
+/venv

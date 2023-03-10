@@ -22,11 +22,7 @@ class UserSerializer(serializers.ModelSerializer):
 #         username = validated_data['username']
 #         email = validated_data['email']
 #         password = validated_data['password']
-#         user_obj = User(
-#             username=username,
-#             email=email,
-#             is_staff=True
-#         )
+#         user_obj = User(username=username, email=email, is_staff=True)
 #         user_obj.set_password(password)
 #         user_obj.save()
 #         return validated_data

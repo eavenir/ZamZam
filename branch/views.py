@@ -1,11 +1,9 @@
-from django.shortcuts import render, HttpResponse
-
-
+from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 from .models import Branch
 
 
+@login_required
 def index(request):
-    # latest_question_list = Branch.objects.all()
-    # context = {'latest_question_list': latest_question_list}
     return render(request, 'branch/index.html')
 # Create your views here.
